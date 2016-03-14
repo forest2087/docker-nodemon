@@ -13,4 +13,4 @@ VOLUME /root/node/lib/node_modules
 
 EXPOSE 3000
 
-CMD ["nodemon",  "-w .",  "-w node_modules"]
+CMD ["nodemon",  "/var/www/app/lib/app.js", "-w .",  "-w node_modules"]
