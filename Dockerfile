@@ -6,7 +6,7 @@ RUN npm install -g nodemon@~1.8.1
 RUN npm install -g gulp-cli@~1.2.0
 
 VOLUME /var/www/app
-WORKDIR /usr/src/app
+WORKDIR /var/www/app
 
 RUN npm config set prefix /root/node
 VOLUME /root/node/lib/node_modules
