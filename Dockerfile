@@ -13,4 +13,8 @@ VOLUME /root/node/lib/node_modules
 
 EXPOSE 3000
 
+cd /var/www/app
+
+CMD ["npm install"]
+
 CMD ["nodemon",  "/var/www/app/lib/app.js", "-w .",  "-w node_modules"]
