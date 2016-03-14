@@ -5,15 +5,13 @@ RUN npm install -g bower@~1.7.2
 RUN npm install -g nodemon@~1.8.1
 RUN npm install -g gulp-cli@~1.2.0
 
-VOLUME /usr/src/app
+VOLUME /var/www/app
 WORKDIR /usr/src/app
 
 RUN npm config set prefix /root/node
 VOLUME /root/node/lib/node_modules
 
 EXPOSE 3000
-
-WORKDIR /var/www/app
 
 CMD ["npm install"]
 
