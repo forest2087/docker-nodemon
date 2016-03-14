@@ -13,7 +13,7 @@ VOLUME /root/node/lib/node_modules
 
 EXPOSE 3000
 
-cd /var/www/app
+WORKDIR /var/www/app
 
 CMD ["npm install"]
 
