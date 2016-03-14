@@ -15,4 +15,4 @@ EXPOSE 3000
 
 CMD ["npm install"]
 
-CMD ["nodemon",  "/var/www/app/lib/app.js", "-w .",  "-w node_modules"]
+CMD ["nodemon",  "/var/www/app/lib/app.js", "-L", "-w .",  "-w node_modules"]
